@@ -4,80 +4,38 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lotus Ascension</title>
-
-<style>
-body{
-margin:0;
-background:#05010F;
-color:white;
-font-family:Arial,sans-serif;
-}
-
-.hero{
-min-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-}
-
-h1{
-font-size:4rem;
-color:#E879F9;
-text-shadow:0 0 10px #9333EA,0 0 20px #9333EA,0 0 40px #C026D3;
-}
-
-.subtitle{
-font-size:1.4rem;
-color:#D8B4FE;
-}
-
-.button{
-display:inline-block;
-margin:10px;
-padding:15px 30px;
-background:#9333EA;
-color:white;
-text-decoration:none;
-border-radius:12px;
-box-shadow:0 0 15px #9333EA;
-}
-
-.section{
-max-width:1200px;
-margin:auto;
-padding:80px 25px;
-}
-
-.card{
-background:rgba(255,255,255,0.05);
-border:1px solid #9333EA;
-padding:25px;
-margin:20px 0;
-border-radius:15px;
-}
-
-footer{
-text-align:center;
-padding:60px;
-color:#D8B4FE;
-}
-</style>
+<meta name="description" content="Built in the mud. Designed for the future.">
+<meta name="theme-color" content="#05010F">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 </head>
-
-<body>
+<body data-level="0" data-motes="80">
+<main>
 
 <section class="hero">
-
-<h1>🪷 LOTUS ASCENSION</h1>
-
-<p class="subtitle">
-Built in the mud. Designed for the future.
-</p>
-
-<p>
+<svg class="art" viewBox="-150 -160 300 220" aria-hidden="true">
+  <defs>
+    <linearGradient id="pg" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#7e22ce"/><stop offset="1" stop-color="#f0abfc"/></linearGradient>
+    <radialGradient id="mud" cx="50%" cy="0%" r="100%"><stop offset="0" stop-color="#3b0764"/><stop offset="1" stop-color="transparent"/></radialGradient>
+  </defs>
+  <ellipse cx="0" cy="10" rx="140" ry="22" fill="url(#mud)"/>
+  <g fill="url(#pg)" opacity=".9">
+    <g transform="rotate(-62)"><path class="petal" style="animation-delay:.2s" d="M0 0C-26 -34 -18 -80 0 -104C18 -80 26 -34 0 0Z"/></g>
+    <g transform="rotate(62)"><path class="petal" style="animation-delay:.2s" d="M0 0C-26 -34 -18 -80 0 -104C18 -80 26 -34 0 0Z"/></g>
+    <g transform="rotate(-38)"><path class="petal" style="animation-delay:.6s" d="M0 0C-28 -40 -20 -100 0 -128C20 -100 28 -40 0 0Z"/></g>
+    <g transform="rotate(38)"><path class="petal" style="animation-delay:.6s" d="M0 0C-28 -40 -20 -100 0 -128C20 -100 28 -40 0 0Z"/></g>
+    <g transform="rotate(-16)"><path class="petal" style="animation-delay:1s" d="M0 0C-30 -44 -22 -112 0 -146C22 -112 30 -44 0 0Z"/></g>
+    <g transform="rotate(16)"><path class="petal" style="animation-delay:1s" d="M0 0C-30 -44 -22 -112 0 -146C22 -112 30 -44 0 0Z"/></g>
+    <path class="petal" style="animation-delay:1.4s" d="M0 0C-32 -48 -24 -120 0 -156C24 -120 32 -48 0 0Z" fill="#fff" fill-opacity=".85"/>
+  </g>
+</svg>
+<span class="tag">Six levels. One ascent.</span>
+<h1 class="shine">Lotus Ascension</h1>
+<p class="subtitle">Built in the mud. Designed for the future.</p>
+<p class="lead">
 Powered by Prism Intelligence.<br>
 Invented in Lotus Labs X.<br>
 Connected through Purple Circuit.<br>
@@ -85,65 +43,64 @@ Explored through Quantum Lotus.<br>
 Elevated by Aether Lotus.<br>
 Hidden within Project Violet.
 </p>
+<div>
+<a href="prism-intelligence.html" class="button">Begin The Ascent</a>
+<a href="#membership" class="button ghost">Join For $4.44 / Month</a>
+</div>
+<span class="scroll-hint">RISE</span>
+</section>
 
-<a href="#ecosystem" class="button">ENTER THE ASCENSION</a>
-
-<a href="#membership" class="button">
-JOIN FOR $4.44 / MONTH
-</a>
-
+<section id="pyramid" class="section" style="text-align:center">
+<span class="tag reveal">The Map</span>
+<h2 class="reveal">The Ascent</h2>
+<svg class="pyramid reveal" viewBox="0 0 520 360" role="group" aria-label="Pyramid of the five levels, with Project Violet floating above">
+  <defs>
+    <linearGradient id="tier" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e879f9" stop-opacity=".55"/><stop offset="1" stop-color="#7e22ce" stop-opacity=".25"/></linearGradient>
+    <linearGradient id="ray" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9d5ff" stop-opacity=".9"/><stop offset="1" stop-color="#e9d5ff" stop-opacity="0"/></linearGradient>
+  </defs>
+  <ellipse cx="200" cy="312" rx="190" ry="14" fill="#3b0764" opacity=".6"/>
+  <rect class="ray" x="198.5" y="54" width="3" height="250" fill="url(#ray)"/>
+  <g class="cap"><polygon points="200,6 224,50 176,50"/><circle cx="200" cy="34" r="3.5"/></g>
+  <a href="aether-lotus.html" class="tier" aria-label="Level 5, Aether Lotus"><polygon points="194,80 206,80 230,120 170,120"/></a>
+  <a href="quantum-lotus.html" class="tier" aria-label="Level 4, Quantum Lotus"><polygon points="166.4,126 233.6,126 257.6,166 142.4,166"/></a>
+  <a href="purple-circuit.html" class="tier" aria-label="Level 3, Purple Circuit"><polygon points="138.8,172 261.2,172 285.2,212 114.8,212"/></a>
+  <a href="lotus-labs-x.html" class="tier" aria-label="Level 2, Lotus Labs X"><polygon points="111.2,218 288.8,218 312.8,258 87.2,258"/></a>
+  <a href="prism-intelligence.html" class="tier" aria-label="Level 1, Prism Intelligence"><polygon points="83.6,264 316.4,264 340.4,304 59.6,304"/></a>
+  <g class="lbl" text-anchor="start">
+    <text x="262" y="44" class="v">??  PROJECT VIOLET</text>
+    <text x="246" y="105">5  AETHER LOTUS</text>
+    <text x="272" y="151">4  QUANTUM LOTUS</text>
+    <text x="298" y="197">3  PURPLE CIRCUIT</text>
+    <text x="324" y="243">2  LOTUS LABS X</text>
+    <text x="350" y="289">1  PRISM INTELLIGENCE</text>
+  </g>
+</svg>
+<div class="card reveal" style="margin-top:2rem">
+<p>The base is the mind. Each tier lifts you higher, and each is built on the one beneath it.</p>
+<p>At the summit floats the one piece that cannot be built, only found. <strong>Project Violet.</strong></p>
+</div>
 </section>
 
 <section id="ecosystem" class="section">
-
-<h2>The Ecosystem</h2>
-
-<div class="card">
-<h3>💎 Prism Intelligence</h3>
-<p>One Idea. Infinite Outcomes.</p>
+<h2 class="reveal">The Ecosystem</h2>
+<p class="reveal">Every level sits higher than the last. Climb them in order, or choose your door.</p>
+<div class="grid">
+<a class="card reveal" href="prism-intelligence.html"><span class="level-no">LEVEL 1</span><h3>Prism Intelligence</h3><p>One Idea. Infinite Outcomes.</p></a>
+<a class="card reveal" href="lotus-labs-x.html"><span class="level-no">LEVEL 2</span><h3>Lotus Labs X</h3><p>Building Tomorrow Before It Exists.</p></a>
+<a class="card reveal" href="purple-circuit.html"><span class="level-no">LEVEL 3</span><h3>Purple Circuit</h3><p>Creativity at Full Voltage.</p></a>
+<a class="card reveal" href="quantum-lotus.html"><span class="level-no">LEVEL 4</span><h3>Quantum Lotus</h3><p>Infinite Paths. Infinite Potential.</p></a>
+<a class="card reveal" href="aether-lotus.html"><span class="level-no">LEVEL 5</span><h3>Aether Lotus</h3><p>Beyond Technology.</p></a>
+<a class="card reveal signal" href="project-violet.html"><span class="level-no">LEVEL ?</span><h3>Project Violet</h3><p>SIGNAL DETECTED.</p><p>You were never meant to find this section.</p><p>Since you're here, come with me.</p></a>
 </div>
-
-<div class="card">
-<h3>🧪 Lotus Labs X</h3>
-<p>Building Tomorrow Before It Exists.</p>
-</div>
-
-<div class="card">
-<h3>⚡ Purple Circuit</h3>
-<p>Creativity at Full Voltage.</p>
-</div>
-
-<div class="card">
-<h3>🌌 Quantum Lotus</h3>
-<p>Infinite Paths. Infinite Potential.</p>
-</div>
-
-<div class="card">
-<h3>✨ Aether Lotus</h3>
-<p>Beyond Technology.</p>
-</div>
-
-<div class="card">
-<h3>🟣 Project Violet</h3>
-<p>SIGNAL DETECTED.</p>
-<p>You were never meant to find this section.</p>
-<p>Since you're here...</p>
-<p>Come with me.</p>
-</div>
-
 </section>
 
 <section id="membership" class="section">
-
-<h2>✨ AETHER LOTUS</h2>
-
-<h3>ASCENSION CIRCLE</h3>
-
-<h1>$4.44</h1>
-
-<p>Per Month</p>
-
-<ul>
+<div class="card reveal" style="text-align:center">
+<span class="tag">Aether Lotus</span>
+<h2>Ascension Circle</h2>
+<div class="price shine">$4.44</div>
+<p>Per month</p>
+<ul class="glyphs" style="display:inline-block;text-align:left">
 <li>Exclusive Updates</li>
 <li>AI Resources</li>
 <li>Project Access</li>
@@ -151,19 +108,13 @@ JOIN FOR $4.44 / MONTH
 <li>Purple Circuit Content</li>
 <li>Future Innovations</li>
 </ul>
-
-<a href="#" class="button">JOIN THE ASCENSION</a>
-
+<div><a href="#" class="button">Join The Ascension</a></div>
+</div>
 </section>
 
-<footer>
-
-<p>
-The future isn't coming.<br>
-We're building it.
-</p>
-
+</main>
+<footer class="reveal">
+<p>The future isn't coming.<br>We're building it.</p>
 </footer>
-
 </body>
 </html>
