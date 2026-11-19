@@ -27,7 +27,7 @@
   core.className = "core";
   const mist = document.createElement("div");
   mist.className = "mist";
-  mist.innerHTML = "<i></i><i></i><i></i>";
+  mist.innerHTML = "<i></i><i></i><i></i><i></i>";
   body.append(spot, core, mist);
 
   // ---------- landing: if we arrived through the mist, lift it away ----------
@@ -39,7 +39,7 @@
       mist.classList.remove("instant", "cover");
       mist.classList.add("lift");
     }));
-    setTimeout(() => { mist.classList.remove("lift"); body.classList.remove("arriving"); }, 2600);
+    setTimeout(() => { mist.classList.remove("lift"); body.classList.remove("arriving"); }, 3500);
   }
   // bfcache: coming back with the Back button must not leave the mist covering the page
   addEventListener("pageshow", (e) => {
@@ -57,7 +57,7 @@
     sessionStorage.setItem("mist", "1");
     body.classList.add("leaving");
     mist.classList.add("cover");
-    setTimeout(() => (location.href = u.href), 1250);
+    setTimeout(() => (location.href = u.href), 1800);
   });
 
   // ---------- altitude gauge ----------

@@ -215,14 +215,15 @@ details[open] .answer{animation:fade 1.5s both}
 
 /* ----- the mist: rises to swallow the page, then lifts away on the next one ----- */
 .mist{position:fixed;inset:-20vh -10vw;z-index:100;pointer-events:none;transform:translateY(120%);opacity:0;
-  transition:transform 1.3s cubic-bezier(.55,0,.25,1),opacity .9s ease}
-.mist i{position:absolute;inset:0;filter:blur(40px);
+  transition:transform 1.9s cubic-bezier(.5,0,.2,1),opacity 1.2s ease}
+.mist i{position:absolute;inset:0;filter:blur(55px);
   background:
    radial-gradient(40vmax 28vmax at 15% 70%,rgba(168,85,247,.95),transparent 70%),
    radial-gradient(46vmax 30vmax at 55% 55%,rgba(126,34,206,.98),transparent 72%),
    radial-gradient(38vmax 26vmax at 90% 75%,rgba(217,70,239,.85),transparent 70%),
    radial-gradient(60vmax 40vmax at 50% 110%,rgba(88,28,135,1),transparent 70%),
-   linear-gradient(180deg,rgba(76,29,149,.9),rgba(46,16,101,.96))}
+   linear-gradient(180deg,rgba(76,29,149,.97),rgba(46,16,101,1))}
+.mist i:nth-child(4){background:radial-gradient(70vmax 50vmax at 50% 100%,rgba(192,132,252,.9),transparent 75%);animation:mistA 11s ease-in-out infinite alternate-reverse;mix-blend-mode:screen}
 .mist i:nth-child(2){animation:mistA 7s ease-in-out infinite alternate;opacity:.8;mix-blend-mode:screen}
 .mist i:nth-child(3){animation:mistB 9s ease-in-out infinite alternate;opacity:.6;transform:scaleX(-1)}
 @keyframes mistA{to{transform:translate(6vw,-8vh) scale(1.15)}}
@@ -231,11 +232,11 @@ details[open] .answer{animation:fade 1.5s both}
 .mist.cover{transform:translateY(0);opacity:1}
 .mist.cover::after{opacity:1}
 .mist.instant{transition:none}
-.mist.lift{transform:translateY(-130%);opacity:0;transition:transform 2.2s cubic-bezier(.3,.6,.2,1),opacity 2.2s ease}
+.mist.lift{transform:translateY(-130%);opacity:0;transition:transform 3s cubic-bezier(.3,.6,.2,1),opacity 2.4s ease .4s}
 /* the page itself warps as you leave and settles as you arrive */
-body.leaving main,body.leaving .sky{transition:transform 1.3s ease-in,filter 1.3s ease-in;transform:translateY(-4vh) scale(1.03);filter:blur(6px) brightness(1.3) hue-rotate(15deg)}
-body.arriving main{animation:land 2.4s cubic-bezier(.2,.7,.2,1) both}
-@keyframes land{from{transform:translateY(5vh) scale(.98);filter:blur(10px)}}
+body.leaving main,body.leaving .sky{transition:transform 1.9s ease-in,filter 1.9s ease-in;transform:translateY(-4vh) scale(1.03);filter:blur(10px) brightness(1.4) hue-rotate(15deg)}
+body.arriving main{animation:land 3.2s cubic-bezier(.2,.7,.2,1) both}
+@keyframes land{0%{transform:translateY(5vh) scale(.98);filter:blur(16px) brightness(1.5)}60%{filter:blur(6px) brightness(1.15)}100%{transform:none;filter:none}}
 
 /* ----- the pyramid: five tiers (levels) and a floating capstone (Project Violet) ----- */
 .pyramid{width:min(560px,100%);height:auto;overflow:visible;display:block;margin:1.5rem auto 0;filter:drop-shadow(0 0 28px color-mix(in srgb,var(--accent) 70%,transparent))}
